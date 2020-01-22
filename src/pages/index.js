@@ -30,7 +30,9 @@ export default ({ data }) => {
             const { frontmatter } = edge.node
             return (
               <div key={frontmatter.path} style={{ marginBottom: "1rem" }}>
+                <Link to={frontmatter.path}>
                 {frontmatter.title}
+                </Link>
               </div>
             )
           })}
